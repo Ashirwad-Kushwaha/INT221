@@ -24,3 +24,12 @@ Route::get('/marks/{marks}', function($marks){
         return "Bad request";
     }
 });
+
+Route::get('test/{name}/{profile}', function($name, $profile){
+    return view('test', [
+        'name' => $name,
+        'profile' => $profile
+    ]);
+});
+
+// Route::view('test', 'test');
